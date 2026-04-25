@@ -42,7 +42,7 @@ app.get('/', (req, res) => {
       <div class="card">
         <h1>Hello from Docker!</h1>
         <p>You are now running inside a Docker container.</p>
-        <div class="version">Version 1.0.0</div>
+        <div class="version">Version 1.0.1</div>
       </div>
     </body>
     </html>
