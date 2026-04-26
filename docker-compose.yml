@@ -1,0 +1,9 @@
+services:
+  hello-webapp:
+    image: hello-webapp:latest
+    container_name: hello-webapp
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
