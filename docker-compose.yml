@@ -7,3 +7,9 @@ services:
     volumes:
       - ./data:/app/data
     restart: unless-stopped
+
+  log-watcher:
+    image: alpine:latest
+    container_name: log-watcher
+    command: ["sh", "-c", "tail -f /dev/null"]
+    restart: unless-stopped
